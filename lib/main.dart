@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'widgets/star_rating.dart';
-import 'widgets/dashed_line.dart';
+//import 'widgets/dashed_line.dart';
+import 'pages/main/main.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,17 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        highlightColor: Colors.transparent //去除水波纹高亮效果
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("首页"),
-        ),
-        body: Center(
-          child: XLLDashedLine(axis: Axis.horizontal, dashedHeight: 1, dashedWidth: 8,),
-        ),
-      ),
+      home: XLLMainPage()
     );
   }
 }
