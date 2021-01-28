@@ -24,12 +24,11 @@ class _XLLHomeContentState extends State<XLLHomeContent> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Center(
-      child: Text(
-        "首页",
-        style: TextStyle(
-          color: Colors.green,
-          fontSize: 30
-        ),
+      child: ListView.builder(
+        itemBuilder: (ctx, index) {
+          return Text("$index");
+        },
+        itemCount: 50,
       ),
     );
   }

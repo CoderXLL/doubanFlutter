@@ -9,6 +9,7 @@ class XLLSubjectPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("书影音"),
+        elevation: 0,
       ),
       body: Center(
         child: Text("书影音"),
